@@ -115,7 +115,7 @@ contract Trust {
     
     function() payable {}
     
-    // clean up
+    // clean up contract
     function kill() onlyInitialOwner {
         selfdestruct(initialOwner);
     }
